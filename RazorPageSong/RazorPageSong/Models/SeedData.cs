@@ -30,7 +30,8 @@ namespace RazorPageSong.Models
                         Artist = "Logic",
                         Album = "Bobby Tarantino",
                         Genre = "Rap",
-                        Plays = 100000
+                        Plays = 100000,
+                        Rating = "10"
                     },
 
                     new Song
@@ -40,7 +41,8 @@ namespace RazorPageSong.Models
                         Artist = "Cordae",
                         Album = "Super",
                         Genre = "Rap",
-                        Plays = 100000
+                        Plays = 100000,
+                        Rating = "9"
                     }
                 );
                 context.SaveChanges();

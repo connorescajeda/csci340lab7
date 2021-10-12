@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int}"
 @model RazorPageSong.Pages.Songs.DeleteModel
 
 @{
@@ -42,8 +42,14 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Song.Plays)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Song.Rating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Song.Rating)
+        </dd>
     </dl>
-    
+
     <form method="post">
         <input type="hidden" asp-for="Song.ID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |

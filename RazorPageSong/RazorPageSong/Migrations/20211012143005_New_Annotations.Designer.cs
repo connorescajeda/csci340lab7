@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPageSong.Data;
 
 namespace RazorPageSong.Migrations
 {
     [DbContext(typeof(RazorPageSongContext))]
-    partial class RazorPageSongContextModelSnapshot : ModelSnapshot
+    [Migration("20211012143005_New_Annotations")]
+    partial class New_Annotations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
